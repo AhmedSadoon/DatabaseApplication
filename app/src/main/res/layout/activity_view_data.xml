@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewDataActivity">
+
+    <TextView
+        android:id="@+id/tvDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="10dp"
+        android:text="DataBase"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvshow"
+        android:layout_width="371dp"
+        android:layout_height="390dp"
+        android:layout_below="@+id/tvDB"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="26dp"
+        android:background="#000000"
+        android:text="Data Here"
+        android:textColor="#ff9d00"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="222dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/tvshow"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="30dp"
+        android:width="240dp"
+        android:onClick="view_data"
+        android:text="view data"
+        android:textSize="25dp" />
+
+</RelativeLayout>

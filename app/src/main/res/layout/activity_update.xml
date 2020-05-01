@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/tvupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="10dp"
+        android:text="Update"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tv_old_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvupdate"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="63dp"
+        android:text="Old Name: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_New_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_old_name"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="63dp"
+        android:text="New Name: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_Old_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvupdate"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="50dp"
+        android:width="220dp"
+        android:hint="Old Name"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_New_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_Old_name"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="45dp"
+        android:width="220dp"
+        android:hint="New Name"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_New_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="42dp"
+        android:width="240dp"
+        android:onClick="Update"
+        android:text="Update"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Update"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="121dp"
+        android:width="240dp"
+        android:onClick="back"
+        android:text="back"
+        android:textSize="25dp" />
+
+</RelativeLayout>

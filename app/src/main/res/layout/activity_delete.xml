@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteActivity">
+
+    <TextView
+        android:id="@+id/tvDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="10dp"
+        android:text="Delete"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDel"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="63dp"
+        android:text="User Name: "
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="-39dp"
+        android:width="220dp"
+        android:hint="User Name"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_Delete"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_user_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="118dp"
+        android:width="240dp"
+        android:onClick="Delete"
+        android:text="Delete"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Delete"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="70dp"
+        android:width="240dp"
+        android:onClick="back"
+        android:text="back"
+        android:textSize="25dp" />
+
+</RelativeLayout>

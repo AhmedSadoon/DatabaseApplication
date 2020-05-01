@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="10dp"
+        android:text="DataBase"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDB"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="63dp"
+        android:text="Name: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDB"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="50dp"
+        android:width="220dp"
+        android:textAlignment="center"
+        android:hint="Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvname"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="36dp"
+        android:text="Username: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvname"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="27dp"
+        android:width="220dp"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUsername"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="29dp"
+        android:text="Password: "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUsername"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="24dp"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:width="220dp"/>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="88dp"
+        android:width="240dp"
+        android:onClick="Save"
+        android:text="save"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="184dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tvPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="74dp"
+        android:width="240dp"
+        android:onClick="view_data"
+        android:text="view data"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_show"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="42dp"
+        android:width="240dp"
+        android:onClick="Next"
+        android:text="Search"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_show"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="37dp"
+        android:width="240dp"
+        android:onClick="Update"
+        android:text="Update"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btn_Delete"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Update"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="41dp"
+        android:width="240dp"
+        android:onClick="Delete"
+        android:text="Delete"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
